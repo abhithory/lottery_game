@@ -1,0 +1,22 @@
+.ticketBg {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  background: linear-gradient(to right bottom, #ece7ee2d, #ba2df777);
+  border-radius: 1rem;
+  backdrop-filter: blur(3rem);
+}
+
+
+
+p{
+    padding: 0%;
+    margin: 0%;
+}
+
+h2{
+    padding: 0%;
+    margin: 0%;
+}

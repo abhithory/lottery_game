@@ -1,0 +1,173 @@
+/* btn-hover color-1,2..,btn-glow ,btn-glitch*/
+
+
+.custom-Big-Button{
+    z-index: -1;
+    background-color: #8244e6;
+    /* background-color: #9400D3; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 150px 10px #f700ff;
+}
+
+.custom-Big-Button:hover {
+    box-shadow: 0px 0px 150px 10px #cc00ff;
+    
+}
+
+.custom-Big-Button-admin{
+    z-index: -1;
+    background-color: #d126fc;
+    /* background-color: #9400D3; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 150px 10px #f700ff;
+}
+
+.custom-Big-Button-admin:hover {
+    box-shadow: 0px 0px 150px 10px #cc00ff;
+    
+}
+
+
+
+/* btn-hover color-1,2... in button py-5 */
+.btn-hover {
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-4 {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.btn-hover.color-5 {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+.btn-hover.color-6 {
+    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.btn-hover.color-10 {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.btn-hover.color-11 {
+       background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+
+/*btn-glow  */
+
+.btn-glow {
+    transition: 0.5s;
+}
+.btn-glow:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*  */
+
+
+.btn-glitch {
+    display: block;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    border-radius: 0.4em;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    mix-blend-mode: color-dodge;
+    perspective: 500px;
+    transform-style: preserve-3d;
+}
+.btn-glitch:before, .btn-glitch:after {
+    --z: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    mix-blend-mode: inherit;
+    border-radius: inherit;
+    transform-style: preserve-3d;
+    transform: translate3d(calc(var(--z) * 0px), calc(var(--z) * 0px), calc(var(--z) * 0px));
+}
+.btn-glitch span {
+    mix-blend-mode: none;
+    display: block;
+}
+.btn-glitch:after {
+    background-color: #5d00ff;
+}
+.btn-glitch:before {
+    background-color: #ff1731;
+}
+.btn-glitch:hover {
+    background-color: #fff65b;
+    transition: background 0.3s 0.1s;
+}
+.btn-glitch:hover:before {
+    --z: 0.04;
+    animation: translateWobble 2.2s ease forwards;
+}
+.btn-glitch:hover:after {
+    --z: -0.06;
+    animation: translateWobble 2.2s ease forwards;
+}

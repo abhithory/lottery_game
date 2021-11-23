@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fullBodyBG {
+  background-color: #9400d3;
+
+  background: linear-gradient(to right top, #9400d3, #b300ff);
+  background: -webkit-linear-gradient(to right top, #9400d3, #b300ff);
+  /* background: linear-gradient(#000428 , #002d552f), url('../imgs/bg2.png') no-repeat center center fixed ; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.banner-img-bg{
+  background: url('../img/banner2.jpg') no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.glassBg-box-timer {
+  background: linear-gradient(to right bottom, #8c07c54b, #780fa550);
+  border-radius: 2rem;
+  width: fit-content;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+
+
+.main-box {
+  /* min-height: 80vh; */
+  /* overflow: hidden; */
+  width: 90%;
+  /* background: linear-gradient(to right bottom, #8c07c596, #780fa596); */
+  /* border-radius: 3rem; */
+  /* backdrop-filter: blur(3rem); */
+}
+
+.glassBg-box {
+  background: linear-gradient(to right bottom, #8c07c596, #780fa596);
+  border-radius: 2rem;
+  backdrop-filter: blur(3rem);
+}
+
+
+
+.text-bg-glass{
+  background: linear-gradient(to right bottom, #54007996, #4b016b96);
+  border-radius: 2rem;
+  backdrop-filter: blur(3rem);
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.fade-text-color{
+  color: #9400d3;
+
+}
+
+.letter-spaceing{
+  letter-spacing: 10px;
+}
+
+
+
+.glow-div {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.glow-div:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-div2 {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.glow-div2:hover {
+  transform: scale(1.04);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 6px 0px #b405ff;
+
+}
+

@@ -1,0 +1,25 @@
+
+.banner-img{
+    border-radius: 3rem;
+    height: 12rem;
+    width: 60rem;
+    
+  }
+
+  .timer-center{
+      justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .glassBg-box-timer {
+    background: linear-gradient(to right bottom, #8c07c54b, #780fa550);
+    border-radius: 2rem;
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    backdrop-filter: blur(8px);
+  }
+  

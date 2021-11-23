@@ -1,0 +1,24 @@
+.table-box{
+    overflow: hidden;
+    width: 96%;
+    background: linear-gradient(
+      to right bottom,
+      #8c07c596,
+      #780fa596
+    );
+    border-radius: 3rem;
+    z-index: 2;
+    backdrop-filter: blur(3rem);
+    }
+/*     
+    .table-bg{
+      border-radius: 20px;
+      background: linear-gradient(
+        to right bottom,
+        #6c0094a8,
+        #5f0088be
+      );
+      backdrop-filter: blur(2rem);
+      }
+  
+   */
