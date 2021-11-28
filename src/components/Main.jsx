@@ -150,7 +150,7 @@ export default function Main(props) {
 
     const ticketColStyle = "col-xl-2 col-md-3 col-6 mb-2"
 
-    const refferalLink = 'http://localhost:3000/#/referral/' + account;
+    const refferalLink = 'https://abhithory.github.io/lottery_game/#/referral/' + account;
     return (
         <div className="main-box mx-auto mt-2 p-4 text-light text-center">
             <div className="bg-holder" style={{ backgroundImage: 'url(img/bg/heroheader-bg.png)', backgroundPosition: 'center', backgroundSize: 'contain' }}></div>
