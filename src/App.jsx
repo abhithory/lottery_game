@@ -54,7 +54,7 @@ class App extends Component {
     // if (networkData) {
       if (networkId === 80001 || networkId === 137) {
       this.setState({ connected: true });
-      const networkAddress = '0xe88961C0d5b7D1C76883205910D391da32eed591';
+      const networkAddress = '0x9fB8E9429465e51A3Eb3cd303FEb28cE7C867089';
       const lotteryContract = await web3.eth.Contract(LotteryJson.abi, networkAddress);
       this.setState({ lotteryContract });
 
@@ -64,8 +64,80 @@ class App extends Component {
       this.setState({ loading: false });
     } else {
       window.alert("Blockchat contract not deployed to detected network.");
+      this.switchToPolygonTestNet()
     }
   }
+
+  
+    async switchToPolygonTestNet(){
+    try {
+      await window.ethereum.request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: "0x13881" }],
+      });
+      this.loadBlockChatData();
+    } catch (error) {
+      if (error.code === 4902) {
+        try {
+          await window.ethereum.request({
+            method: "wallet_addEthereumChain",
+            params: [
+              {
+                chainId: "0x13881",
+                chainName: "Polygon TestNet Mumbai",
+                rpcUrls: ["https://rpc-mumbai.maticvigil.com/"],
+                nativeCurrency: {
+                  name: "Matic",
+                  symbol: "Matic",
+                  decimals: 18,
+                },
+                blockExplorerUrls: ["https://explorer-mumbai.maticvigil.com"],
+              },
+            ],
+          });
+          this.loadBlockChatData();
+
+        } catch (error) {
+        }
+      }
+    }
+  }
+
+
+   async switchToPolygonMainnet() {
+    try {
+      await window.ethereum.request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: "0x89" }],
+      });
+      this.loadBlockChatData();
+    } catch (error) {
+      if (error.code === 4902) {
+        try {
+          await window.ethereum.request({
+            method: "wallet_addEthereumChain",
+            params: [
+              {
+                chainId: "0x89",
+                chainName: "Polygon Mainnet",
+                rpcUrls: ["https://rpc-mainnet.maticvigil.com/"],
+                nativeCurrency: {
+                  name: "Matic",
+                  symbol: "Matic",
+                  decimals: 18,
+                },
+                blockExplorerUrls: ["https://explorer.matic.network/"],
+              },
+            ],
+          });
+          this.loadBlockChatData();
+
+        } catch (error) {
+        }
+      }
+    }
+  }
+
 
   constructor(props) {
     super(props);
