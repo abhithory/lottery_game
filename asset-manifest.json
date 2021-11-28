@@ -1,10 +1,10 @@
 {
   "main.css": "/lottery_game/static/css/main.afd56a0e.chunk.css",
-  "main.js": "/lottery_game/static/js/main.adf1c452.chunk.js",
-  "main.js.map": "/lottery_game/static/js/main.adf1c452.chunk.js.map",
+  "main.js": "/lottery_game/static/js/main.a946d2c4.chunk.js",
+  "main.js.map": "/lottery_game/static/js/main.a946d2c4.chunk.js.map",
   "static/css/1.ce284af8.chunk.css": "/lottery_game/static/css/1.ce284af8.chunk.css",
-  "static/js/1.ef57b6cd.chunk.js": "/lottery_game/static/js/1.ef57b6cd.chunk.js",
-  "static/js/1.ef57b6cd.chunk.js.map": "/lottery_game/static/js/1.ef57b6cd.chunk.js.map",
+  "static/js/1.92912c64.chunk.js": "/lottery_game/static/js/1.92912c64.chunk.js",
+  "static/js/1.92912c64.chunk.js.map": "/lottery_game/static/js/1.92912c64.chunk.js.map",
   "runtime~main.js": "/lottery_game/static/js/runtime~main.280a0841.js",
   "runtime~main.js.map": "/lottery_game/static/js/runtime~main.280a0841.js.map",
   "static/media/bootstrap-icons.css": "/lottery_game/static/media/bootstrap-icons.e07b538a.woff2",
@@ -12,6 +12,6 @@
   "static/css/main.afd56a0e.chunk.css.map": "/lottery_game/static/css/main.afd56a0e.chunk.css.map",
   "static/css/1.ce284af8.chunk.css.map": "/lottery_game/static/css/1.ce284af8.chunk.css.map",
   "index.html": "/lottery_game/index.html",
-  "precache-manifest.1b002d83f6e71b7914280df51131d269.js": "/lottery_game/precache-manifest.1b002d83f6e71b7914280df51131d269.js",
+  "precache-manifest.5606e72eb41a669b670470e85e76e481.js": "/lottery_game/precache-manifest.5606e72eb41a669b670470e85e76e481.js",
   "service-worker.js": "/lottery_game/service-worker.js"
 }

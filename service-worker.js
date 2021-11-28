@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/lottery_game/precache-manifest.1b002d83f6e71b7914280df51131d269.js"
+  "/lottery_game/precache-manifest.5606e72eb41a669b670470e85e76e481.js"
 );
 
 workbox.clientsClaim();
